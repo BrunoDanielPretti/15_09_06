@@ -18,12 +18,26 @@ namespace _15_09_06
         static void Main(string[] args)
         {
             Metro m1 = new Metro(10);
-            Centimetro c1 = new Centimetro(100);
 
-            Metro rtaMetro = m1 - c1;
-            //Centimetro rtaCent = m1 - c1;
+            Centimetro c1 = new Centimetro(200);
+            Centimetro rtaCent;
 
-            Console.WriteLine(rtaMetro.Cantidad);
+            Console.WriteLine("Metros: " + m1.Cantidad + "   Centimetros: " + c1.Cantidad);
+            Console.WriteLine("");
+            //Metro rtaMetro = m1 - c1;
+            //Console.WriteLine(rtaMetro.Cantidad);
+
+            rtaCent = m1 - c1; 
+            Console.WriteLine("Metros - Centimetros: " + rtaCent.Cantidad + " Cm");
+
+            rtaCent = c1 - m1;
+            Console.WriteLine("Centimetros - Metros: " + rtaCent.Cantidad + " Cm");
+
+            rtaCent = m1 * c1;
+            Console.WriteLine("Metros * Centimetros: " + rtaCent.Cantidad + " Cm");
+
+            rtaCent = m1 / c1;
+            Console.WriteLine("Metros / Centimetros: " + rtaCent.Cantidad + " Cm");
 
             Console.ReadKey();
         }

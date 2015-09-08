@@ -18,31 +18,33 @@ namespace _15_09_06
             this.Cantidad=cant;
         }
 
-        public static Metro operator -(Metro met, Centimetro cent)
-        {
-            Metro resultado = new Metro();
 
-            resultado.Cantidad = met.Cantidad - cent.Cantidad / 100;
+        //public static Metro operator -(Metro met, Centimetro cent)
+        //{
+        //    Metro resultado = new Metro();
 
-            return resultado;
-        }
+        //    resultado.Cantidad = met.Cantidad - cent.Cantidad / 100;
 
-        public static Metro operator *(Metro met, Centimetro cent)
-        {
-            Metro resultado = new Metro();
+        //    return resultado;
+        //}
+        
+
+        //public static Metro operator *(Metro met, Centimetro cent)
+        //{
+        //    Metro resultado = new Metro();
             
-            resultado.Cantidad = met.Cantidad * (cent.Cantidad / 100);
+        //    resultado.Cantidad = met.Cantidad * (cent.Cantidad / 100);
 
-            return resultado;
-        }
+        //    return resultado;
+        //}
 
-        public static Metro operator /(Metro met, Centimetro cent)
-        {
-            Metro resultado = new Metro();
+        //public static Metro operator /(Metro met, Centimetro cent)
+        //{
+        //    Metro resultado = new Metro();
 
-            resultado.Cantidad = met.Cantidad / (cent.Cantidad / 100);
+        //    resultado.Cantidad = met.Cantidad / (cent.Cantidad / 100);
 
-            return resultado;
-        }
+        //    return resultado;
+        //}
     }
 }

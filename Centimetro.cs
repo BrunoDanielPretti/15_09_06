@@ -18,7 +18,9 @@ namespace _15_09_06
             this.Cantidad=cant;
         }
 
-        /*
+       
+
+        
         public static Centimetro operator -(Metro met, Centimetro cent)
         {
             Centimetro resultado = new Centimetro();
@@ -28,6 +30,17 @@ namespace _15_09_06
             return resultado;
         }
 
+        public static Centimetro operator -(Centimetro cent, Metro met)
+        {
+            Centimetro resultado = new Centimetro();
+
+            resultado.Cantidad = cent.Cantidad -  met.Cantidad * 100;
+
+            return resultado;
+        }
+
+
+       
         public static Centimetro operator *(Metro met, Centimetro cent)
         {
             Centimetro resultado = new Centimetro();
@@ -45,6 +58,6 @@ namespace _15_09_06
 
             return resultado;
         }
-          */
+         
     }
 }
