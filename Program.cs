@@ -17,6 +17,14 @@ namespace _15_09_06
     {
         static void Main(string[] args)
         {
+            Metro m1 = new Metro(10);
+            Centimetro c1 = new Centimetro(10);
+
+            m1 = m1 - c1;
+
+            Console.WriteLine(m1.Cantidad);
+
+            Console.ReadKey();
         }
     }
 }
