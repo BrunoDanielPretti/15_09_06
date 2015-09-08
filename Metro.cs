@@ -26,6 +26,12 @@ namespace _15_09_06
             return valor;
         }
 
+        public static implicit operator Metro(Centimetro cant)
+        {
+            Metro valor = new Metro(cant.Cantidad / 100);
+            return valor;
+        }
+
         //public static Metro operator -(Metro met, Centimetro cent)
         //{
         //    Metro resultado = new Metro();

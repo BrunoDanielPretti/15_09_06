@@ -22,24 +22,28 @@ namespace _15_09_06
             Centimetro c1 = 100;
             Centimetro rtaCent;
 
-            c1 = m1;
-
             Console.WriteLine("Metros: " + m1.Cantidad + "   Centimetros: " + c1.Cantidad);
             Console.WriteLine("");
-            //Metro rtaMetro = m1 - c1;
-            //Console.WriteLine(rtaMetro.Cantidad);
-            
+
+           
+           
+
+            rtaMetro = m1 - c1;
             rtaCent = m1 - c1;
-            Console.WriteLine("Metros - Centimetros: " + rtaCent.Cantidad + " Cm");
+            Console.WriteLine("Metros - Centimetros: " + rtaCent.Cantidad + " Cm o " + rtaMetro.Cantidad + "m" );
 
-            rtaCent = c1 - m1;
-            Console.WriteLine("Centimetros - Metros: " + rtaCent.Cantidad + " Cm");
+            rtaMetro = c1 - m1;
+            rtaMetro = rtaCent;
+            Console.WriteLine("Centimetros - Metros: " + rtaCent.Cantidad + " Cm o " + rtaMetro.Cantidad + "m");
 
+            rtaMetro = m1 * c1;
             rtaCent = m1 * c1;
-            Console.WriteLine("Metros * Centimetros: " + rtaCent.Cantidad + " Cm");
+            Console.WriteLine("Metros * Centimetros: " + rtaCent.Cantidad + " Cm o " + rtaMetro.Cantidad + "m");
 
+            
             rtaCent = m1 / c1;
-            Console.WriteLine("Metros / Centimetros: " + rtaCent.Cantidad + " Cm");
+            rtaMetro = rtaCent;
+            Console.WriteLine("Metros / Centimetros: " + rtaCent.Cantidad + " Cm o " + rtaMetro.Cantidad + "m");
             
             Console.WriteLine("");
             
