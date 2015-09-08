@@ -17,7 +17,14 @@ namespace _15_09_06
         {
             this.Cantidad=cant;
         }
+    
+    
 
+        public static implicit operator Metro (float cant)
+        {
+            Metro valor = new Metro(cant);
+            return valor;
+        }
 
         //public static Metro operator -(Metro met, Centimetro cent)
         //{

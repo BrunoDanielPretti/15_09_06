@@ -18,7 +18,11 @@ namespace _15_09_06
             this.Cantidad=cant;
         }
 
-       
+        public static implicit operator Centimetro(float cant)
+        {
+            Centimetro valor = new Centimetro(cant);
+            return valor;
+        }
 
         
         public static Centimetro operator -(Metro met, Centimetro cent)

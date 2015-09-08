@@ -17,9 +17,9 @@ namespace _15_09_06
     {
         static void Main(string[] args)
         {
-            Metro m1 = new Metro(10);
-
-            Centimetro c1 = new Centimetro(200);
+            Metro m1 = 10;
+            Metro rtaMetro;
+            Centimetro c1 = 200;
             Centimetro rtaCent;
 
             Console.WriteLine("Metros: " + m1.Cantidad + "   Centimetros: " + c1.Cantidad);
