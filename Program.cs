@@ -19,15 +19,17 @@ namespace _15_09_06
         {
             Metro m1 = 10;
             Metro rtaMetro;
-            Centimetro c1 = 200;
+            Centimetro c1 = 100;
             Centimetro rtaCent;
+
+            c1 = m1;
 
             Console.WriteLine("Metros: " + m1.Cantidad + "   Centimetros: " + c1.Cantidad);
             Console.WriteLine("");
             //Metro rtaMetro = m1 - c1;
             //Console.WriteLine(rtaMetro.Cantidad);
-
-            rtaCent = m1 - c1; 
+            
+            rtaCent = m1 - c1;
             Console.WriteLine("Metros - Centimetros: " + rtaCent.Cantidad + " Cm");
 
             rtaCent = c1 - m1;
@@ -38,6 +40,19 @@ namespace _15_09_06
 
             rtaCent = m1 / c1;
             Console.WriteLine("Metros / Centimetros: " + rtaCent.Cantidad + " Cm");
+            
+            Console.WriteLine("");
+            
+            if(m1 == c1)
+                Console.WriteLine("Centimetros igual a Metros");
+            else
+                Console.WriteLine("Centimetros Distinto a Metros");
+
+            if(m1 <= c1)
+                Console.WriteLine("Metros Menor o Igual a Centimetros");
+            else
+                Console.WriteLine("Metros Mayor o Igual a Centimetros");
+
 
             Console.ReadKey();
         }
